@@ -307,6 +307,70 @@
       </li>
     </ol>
   </section>
+
+  <section class="card">
+    <h2>[Bonus] Create a web app using GitHub Copilot and deploy on Netlify</h2>
+    <ol>
+      <li>Prerequisites
+        <ul>
+          <li>A <a href="https://github.com/signup" target="_blank" rel="noopener">GitHub</a> account</li>
+          <li><a href="https://github.com/features/copilot" target="_blank" rel="noopener">GitHub Copilot</a> enabled on your account (the free tier is enough for this exercise)</li>
+          <li>A <a href="https://app.netlify.com/signup" target="_blank" rel="noopener">Netlify</a> account (you can sign up using your GitHub account)</li>
+        </ul>
+      </li>
+      <li>Create a new repository for your web app
+        <ul>
+          <li>Go to <a href="https://github.com/new" target="_blank" rel="noopener">GitHub</a> and create a new <strong>public</strong> repository, e.g. <code>my-first-web-app</code></li>
+          <li>Check the box to add a <code>README.md</code> file</li>
+        </ul>
+      </li>
+      <li>Use GitHub Copilot (on <a href="https://github.com/copilot" target="_blank" rel="noopener">github.com/copilot</a>) to scaffold a simple template web app
+        <ul>
+          <li>Go to <a href="https://github.com/copilot" target="_blank" rel="noopener">github.com/copilot</a> and sign in with your GitHub account</li>
+          <li>Start a new chat, and point Copilot to your repository (type <code>#</code> in the chat box and pick your <code>my-first-web-app</code> repository, so it knows where to work)</li>
+          <li>Try a prompt like:
+            <ul>
+              <li>"In my repository my-first-web-app, create a simple, single-page personal portfolio website using only HTML, CSS and JavaScript. Include a header with my name, an About Me section, a list of skills, and a contact section. Put everything in an index.html file with inline or linked style.css and script.js files. Open a pull request with these changes."</li>
+            </ul>
+          </li>
+          <li>Copilot will work in the background as a coding agent and open a pull request on your repository with the new files</li>
+          <li>Review the pull request: click on the <strong>Files changed</strong> tab to see what Copilot created, then click <strong>Merge pull request</strong> once you're happy with it</li>
+          <li>Practice iterating with Copilot by starting new chats (or replying in the pull request) with prompts such as:
+            <ul>
+              <li>"Change the color scheme to a dark theme"</li>
+              <li>"Add a button that shows a random motivational quote when clicked"</li>
+              <li>"Make the page mobile-responsive"</li>
+            </ul>
+          </li>
+          <li>Merge each pull request that Copilot opens once you've reviewed the changes</li>
+        </ul>
+      </li>
+      <li>Preview your web app
+        <ul>
+          <li>After merging, go to your repository's code view on github.com and open <code>index.html</code></li>
+          <li>Click the <strong>Raw</strong> button, then copy the URL and change <code>raw.githubusercontent.com</code> to <code>htmlpreview.github.io/?https://raw.githubusercontent.com</code> to get a quick preview in your browser, or simply wait until you deploy on Netlify in the next step to see it live</li>
+        </ul>
+      </li>
+      <li>Deploy the web app on Netlify
+        <ul>
+          <li>Log in to <a href="https://app.netlify.com/" target="_blank" rel="noopener">Netlify</a></li>
+          <li>Click <strong>Add new site</strong> &gt;&gt; <strong>Import an existing project</strong></li>
+          <li>Choose <strong>Deploy with GitHub</strong>, authorize Netlify if prompted, and select your <code>my-first-web-app</code> repository</li>
+          <li>Since this is a static HTML/CSS/JS site, leave the build command empty and set the publish directory to <code>/</code> (or the folder containing your <code>index.html</code>)</li>
+          <li>Click <strong>Deploy site</strong></li>
+          <li>Wait for the deployment to finish, then click the generated URL (e.g. <code>https://random-name-12345.netlify.app</code>) to view your live web app</li>
+        </ul>
+      </li>
+      <li>Practice:
+        <ul>
+          <li>Use <a href="https://github.com/copilot" target="_blank" rel="noopener">github.com/copilot</a> to ask for a new section or feature to be added to your web app (e.g. a project gallery, a simple contact form, or an image carousel), and merge the resulting pull request</li>
+          <li>Confirm that Netlify automatically redeploys your site after each merge (this is called <strong>continuous deployment</strong>)</li>
+          <li>Go to <strong>Site settings</strong> &gt;&gt; <strong>Change site name</strong> on Netlify to give your site a more memorable URL</li>
+          <li>Open question: What other small projects could you build and deploy this way to showcase your skills?</li>
+        </ul>
+      </li>
+    </ol>
+  </section>
 </main>
 <script>
   (function () {
