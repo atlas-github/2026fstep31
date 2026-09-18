@@ -115,4 +115,47 @@ ___
        - [Google Cloud](https://cloud.google.com/certification)
        - [Azure](https://docs.microsoft.com/en-us/learn/certifications/)
        - [Amazon Web Services](https://aws.amazon.com/certification/)
+___
+
+## [Bonus] Create a web app using GitHub Copilot and deploy on Netlify
+   1. Prerequisites
+       - A [GitHub](https://github.com/signup) account
+       - [GitHub Copilot](https://github.com/features/copilot) enabled on your account (the free tier is enough for this exercise)
+       - [Visual Studio Code](https://code.visualstudio.com/download) installed, with the [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot) and [GitHub Copilot Chat](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat) extensions installed
+       - [Git](https://git-scm.com/downloads) installed on your computer
+       - A [Netlify](https://app.netlify.com/signup) account (you can sign up using your GitHub account)
+   2. Create a new repository for your web app
+       - Go to [GitHub](https://github.com/new) and create a new **public** repository, e.g. `my-first-web-app`
+       - Check the box to add a `README.md` file
+       - Clone the repository to your computer:
+         - `git clone https://github.com/YOUR-USERNAME/my-first-web-app.git`
+       - Open the cloned folder in Visual Studio Code
+   3. Use GitHub Copilot to scaffold a simple template web app
+       - Open the Copilot Chat panel in VS Code (icon in the top right, or `Ctrl+Alt+I` / `Cmd+Ctrl+I`)
+       - Make sure Chat is in **Agent** mode (so Copilot can create files for you), not just **Ask** mode
+       - Try a prompt like:
+         - "Create a simple, single-page personal portfolio website using only HTML, CSS and JavaScript. Include a header with my name, an About Me section, a list of skills, and a contact section. Put everything in an `index.html` file with inline or linked `style.css` and `script.js` files."
+       - Review the files Copilot creates (accept, edit, or ask Copilot to refine them)
+       - Open `index.html` with the "Live Server" extension (or double-click the file to open it in your browser) to preview your web app locally
+       - Practice iterating with Copilot:
+         - "Change the color scheme to a dark theme"
+         - "Add a button that shows a random motivational quote when clicked"
+         - "Make the page mobile-responsive"
+   4. Push your web app to GitHub
+       - Stage, commit and push your changes:
+         - `git add .`
+         - `git commit -m "Add template web app created with GitHub Copilot"`
+         - `git push`
+   5. Deploy the web app on Netlify
+       - Log in to [Netlify](https://app.netlify.com/)
+       - Click **Add new site** >> **Import an existing project**
+       - Choose **Deploy with GitHub**, authorize Netlify if prompted, and select your `my-first-web-app` repository
+       - Since this is a static HTML/CSS/JS site, leave the build command empty and set the publish directory to `/` (or the folder containing your `index.html`)
+       - Click **Deploy site**
+       - Wait for the deployment to finish, then click the generated URL (e.g. `https://random-name-12345.netlify.app`) to view your live web app
+   6. Practice:
+       - Use Copilot Chat to add a new section or feature to your web app (e.g. a project gallery, a simple contact form, or an image carousel)
+       - Push the changes to GitHub and confirm that Netlify automatically redeploys your site (this is called **continuous deployment**)
+       - Go to **Site settings** >> **Change site name** on Netlify to give your site a more memorable URL
+       - Open question: What other small projects could you build and deploy this way to showcase your skills?
 
