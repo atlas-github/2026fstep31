@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agenda</title>
+<style>
+  :root {
+    --max-width: 800px;
+    --accent: #2563eb;
+    --bg: #f8fafc;
+    --card-bg: #ffffff;
+    --text: #1e293b;
+    --muted: #64748b;
+    --border: #e2e8f0;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    padding: 1rem;
+  }
+  main {
+    max-width: var(--max-width);
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 1.5rem 0;
+  }
+  section.card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+  }
+  section.break {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    text-align: center;
+    color: var(--muted);
+    font-style: italic;
+    padding: 0.5rem 0;
+  }
+  ol, ul {
+    padding-left: 1.25rem;
+  }
+  ol > li, ul > li {
+    margin-bottom: 0.4rem;
+  }
+  a {
+    color: var(--accent);
+    word-break: break-word;
+  }
+  code {
+    background: #eef2ff;
+    padding: 0.1rem 0.35rem;
+    border-radius: 4px;
+    font-size: 0.9em;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin: 0.5rem 0;
+    display: block;
+  }
+  @media (max-width: 480px) {
+    body {
+      padding: 0.5rem;
+    }
+    h1 {
+      font-size: 1.5rem;
+    }
+    h2 {
+      font-size: 1.05rem;
+    }
+    section.card {
+      padding: 0.75rem 1rem;
+    }
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Agenda</h1>
+
+  <section class="card">
+    <h2>08.30 am: Intro, career paths in data and questions</h2>
+    <ol>
+      <li><a href="https://docs.google.com/presentation/d/e/2PACX-1vRbfvQpTP4ARbARRWhOL6WZ6koCKSHvf5OxFyHcJjn8GHXG3OpuneEH6uMYlpxKX0H_sEfHB6KAKrkq/pub?start=true&loop=false&slide=id.g29007063b8d_0_118" target="_blank" rel="noopener">This</a> is how my career is progressing so far</li>
+      <li><a href="https://docs.google.com/presentation/d/e/2PACX-1vQp61itveaNmpuS4UMXIfaQshjMYBqywRP2aMWZjMlZy5v-iNOUouDMn_-z33RBwi2TeauhgEzGoep-/pub?start=false&loop=false" target="_blank" rel="noopener">Here</a>'s some information about career paths in data</li>
+      <li>What <a href="https://padlet.com/kohwyhow/what-problems-do-you-want-to-solve-gjcypqiq99ko1wke" target="_blank" rel="noopener">problems</a> do you want to solve?</li>
+    </ol>
+  </section>
+
+  <section class="card">
+    <h2>09.00 am: Looker Studio</h2>
+    <ol>
+      <li><a href="https://mail.google.com/mail/" target="_blank" rel="noopener">Create</a> a Google account (you can use your personal one too, if you prefer)</li>
+      <li>Head to <a href="https://datastudio.google.com/" target="_blank" rel="noopener">Looker Studio</a>, using another tab</li>
+      <li>Download as <a href="https://docs.google.com/spreadsheets/d/1IaonaJj-c5Ud76Uc9WeRiMSlKLTNnbg-BCUxOoZrXn0/edit?usp=sharing" target="_blank" rel="noopener">CSV</a> from here and upload to Looker Studio</li>
+      <li>Build a few charts and filters
+        <ul>
+          <li>What are the total <code>sales</code> by <code>category</code> and <code>year</code>?</li>
+          <li>What are the total <code>profit</code> by <code>category</code> and <code>year</code>?</li>
+          <li>Which <code>cities</code> have generated the highest <code>sales</code>?</li>
+          <li>What are the <code>margins</code> by <code>segment</code>?</li>
+          <li>Make your dashboard look better using a <a href="https://coolors.co/" target="_blank" rel="noopener">color palette generator</a></li>
+        </ul>
+      </li>
+      <li>Practice by creating another page named <code>Customer</code>, and using any chart/table:
+        <ul>
+          <li>What is the name of the Customer with the Highest Sales in New York City?</li>
+          <li>What Sub-Category did this Customer buy, and how much Sales and Profit did this Customer generate for the company?</li>
+          <li>Open question: Is the business doing better or worse off from 2014 to 2017?</li>
+        </ul>
+      </li>
+    </ol>
+    <p><em>Source: Superstore sample data from <a href="https://community.tableau.com/s/question/0D54T00000CWeX8SAL/sample-superstore-sales-excelxls" target="_blank" rel="noopener">Tableau</a></em></p>
+  </section>
+
+  <section class="break">10.30 am: Break</section>
+
+  <section class="card">
+    <h2>10.50 am: Google Colab and Seaborn</h2>
+    <ol>
+      <li>Using either your new Google account or your personal account, open <a href="https://colab.research.google.com/" target="_blank" rel="noopener">Google Colab</a> in another tab</li>
+      <li>Google Colab's interface and functions:
+        <ul>
+          <li>Tools &gt;&gt; Settings &gt;&gt;
+            <ul>
+              <li>Editor &gt;&gt; Show line numbers (check if you prefer)</li>
+              <li>Miscellaneous &gt;&gt; Corgi mode, Kitty mode (turn on if you like)</li>
+            </ul>
+          </li>
+          <li>Test with some basic code:
+            <ul>
+              <li>Click Connect at top right</li>
+              <li>Write simple definition</li>
+              <li>Test simple math problem</li>
+            </ul>
+          </li>
+          <li>Runtime settings
+            <ul>
+              <li>Run cells</li>
+              <li>Reset</li>
+            </ul>
+          </li>
+          <li>Code and text cells</li>
+          <li>Save</li>
+        </ul>
+      </li>
+      <li>More about Colab's Markdown here</li>
+      <li>Refer to <a href="https://github.com/atlas-github/2023fstep25/blob/main/colab_intro.ipynb" target="_blank" rel="noopener">colab_intro.ipynb</a></li>
+      <li>Open a new notebook on <a href="https://colab.research.google.com/" target="_blank" rel="noopener">Google Colab</a></li>
+      <li>Try out a few plots on Seaborn:
+        <ul>
+          <li><a href="https://seaborn.pydata.org/generated/seaborn.histplot.html#seaborn.histplot" target="_blank" rel="noopener">histplot</a></li>
+          <li><a href="https://seaborn.pydata.org/generated/seaborn.displot.html#seaborn.displot" target="_blank" rel="noopener">displot</a></li>
+          <li><a href="https://seaborn.pydata.org/generated/seaborn.boxplot.html#seaborn.boxplot" target="_blank" rel="noopener">boxplot</a></li>
+          <li><a href="https://seaborn.pydata.org/generated/seaborn.lmplot.html#seaborn.lmplot" target="_blank" rel="noopener">lmplot</a></li>
+        </ul>
+      </li>
+      <li>Practice:
+        <ul>
+          <li>Load the <a href="https://docs.google.com/spreadsheets/d/1IaonaJj-c5Ud76Uc9WeRiMSlKLTNnbg-BCUxOoZrXn0/edit?usp=sharing" target="_blank" rel="noopener">CSV</a> into Colab</li>
+          <li>Create a <a href="https://seaborn.pydata.org/generated/seaborn.displot.html#seaborn.displot" target="_blank" rel="noopener">displot</a>, where x-axis represents <code>Region</code></li>
+          <li>Create a <a href="https://seaborn.pydata.org/generated/seaborn.catplot.html#seaborn.catplot" target="_blank" rel="noopener">catplot</a>, where x-axis is <code>Profit</code> and y-axis is <code>Sub-Category</code></li>
+          <li>Adjust the size of charts by <code>sns.set(rc={'figure.figsize':(25.7,8.27)})</code></li>
+          <li>Create a <a href="https://seaborn.pydata.org/generated/seaborn.boxplot.html#seaborn.boxplot" target="_blank" rel="noopener">boxplot</a> where x-axis is <code>Sales</code>, and y-axis is <code>Region</code></li>
+        </ul>
+      </li>
+    </ol>
+  </section>
+
+  <section class="break">12:30 pm: Break</section>
+
+  <section class="card">
+    <h2>1:30 pm: <a href="https://data.gov.my/dashboard" target="_blank" rel="noopener">data.gov.my</a></h2>
+    <ol>
+      <li>Using either your new Google account or your personal account, sign up for <a href="https://www.postman.com/" target="_blank" rel="noopener">Postman</a>, then log in
+        <ul>
+          <li>Look for Workspaces (top left of the page) &gt;&gt; My Workspace (Click)</li>
+          <li><img src="https://github.com/atlas-github/2023fstep25/assets/50855923/4144bc9c-1375-404e-9a39-747cd179724c" alt="Workspaces"></li>
+          <li>Look for the + sign beside Overview</li>
+          <li><img src="https://github.com/atlas-github/2023fstep25/assets/50855923/3582e9e2-61d3-4925-811d-959303ffca23" alt="Plus sign"></li>
+        </ul>
+      </li>
+      <li>Open <a href="https://data.gov.my/dashboard" target="_blank" rel="noopener">data.gov.my</a> using another tab on your browser &gt;&gt; API Docs</li>
+      <li>Scroll to Realtime APIs &gt;&gt; Weather API</li>
+      <li>Try the Forecast API Endpoint <code>GET https://api.data.gov.my/weather/forecast</code> on Postman
+        <ul>
+          <li>Look for the icon circled in the snapshot below</li>
+          <li><img src="https://github.com/atlas-github/2023fstep25/assets/50855923/f68b0004-a86f-467a-8c0c-d0a5c47c09a5" alt="Icon"></li>
+          <li>Switch from cURL to Python - Requests</li>
+          <li><img src="https://github.com/atlas-github/2023fstep25/assets/50855923/225b80ec-0323-42ad-8eb0-67c9d5ae0d85" alt="Python Requests"></li>
+          <li>Copy the Python code from Postman and paste into a new <a href="https://colab.research.google.com/" target="_blank" rel="noopener">Colab notebook</a></li>
+        </ul>
+      </li>
+      <li>Change <code>print(response.text)</code> to <code>response.json()</code> to see the data returned by the API endpoint</li>
+      <li>Tasks:
+        <ul>
+          <li>Convert json output into a dataframe using <code>pd.json_normalize()</code></li>
+          <li>Store dataframe into a variable <code>df</code></li>
+          <li>Filter to include only <code>df[df['location.location_name'] == 'Langkawi']</code></li>
+          <li>Output into a CSV file, then download and open in Excel</li>
+          <li>Now try the Transport API (GTFS-R) and output the locations of Prasarana buses on Google My Maps</li>
+          <li>What other questions can you answer?</li>
+          <li>Don't forget to try using the <a href="https://developer.data.gov.my/realtime-api/weather" target="_blank" rel="noopener">Weather API</a></li>
+        </ul>
+      </li>
+    </ol>
+  </section>
+
+  <section class="break">2:30 pm: Break</section>
+
+  <section class="card">
+    <h2>2.50 pm: Send emails of Air Pollution Index (API) data using Python</h2>
+    <ol>
+      <li>Need to <a href="https://mail.google.com/mail/" target="_blank" rel="noopener">create</a> another Google account, if you haven't already. Remember to activate <a href="https://support.google.com/accounts/answer/185839" target="_blank" rel="noopener">2-Step Verification</a></li>
+      <li>Refer to Sending a <a href="https://realpython.com/python-send-email/" target="_blank" rel="noopener">Plain-Text Email</a>. Look for the code section just above the <strong>Sending a Fancy Email</strong> header.</li>
+      <li>Register for an account on <a href="https://aqicn.org/api/" target="_blank" rel="noopener">aciqn</a></li>
+      <li>Using Postman, try making an API call (documentation <a href="https://aqicn.org/json-api/doc/#api-City_Feed-GetCityFeed" target="_blank" rel="noopener">here</a>)
+        <ul>
+          <li><code>GET https://api.waqi.info/feed/kuala%20lumpur/?token=###INSERT TOKEN HERE###</code></li>
+        </ul>
+      </li>
+      <li>From Postman, copy the Python code into a <a href="https://colab.research.google.com/" target="_blank" rel="noopener">Colab notebook</a></li>
+      <li>Tasks:
+        <ul>
+          <li>Get the API readings of a few stations</li>
+          <li>Send the email containing the API of a chosen station/a few selected locations</li>
+        </ul>
+      </li>
+    </ol>
+  </section>
+
+  <section class="card">
+    <h2>4.15 pm: Wrap up</h2>
+    <ol>
+      <li>Data visualization and coding skills help to automate routine tasks - worth picking up to save time
+        <ul>
+          <li>Looker Studio / Power BI</li>
+          <li><a href="https://learn.microsoft.com/en-us/certifications/exams/pl-300/" target="_blank" rel="noopener">Exam PL-300</a>: Microsoft Power BI Data Analyst</li>
+          <li><a href="https://nostarch.com/pythoncrashcourse2e" target="_blank" rel="noopener">Python Crash Course</a></li>
+        </ul>
+      </li>
+      <li>Get certified for cloud computing
+        <ul>
+          <li><a href="https://cloud.google.com/certification" target="_blank" rel="noopener">Google Cloud</a></li>
+          <li><a href="https://docs.microsoft.com/en-us/learn/certifications/" target="_blank" rel="noopener">Azure</a></li>
+          <li><a href="https://aws.amazon.com/certification/" target="_blank" rel="noopener">Amazon Web Services</a></li>
+        </ul>
+      </li>
+    </ol>
+  </section>
+</main>
+</body>
+</html>
