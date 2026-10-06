@@ -1,397 +1,87 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Agenda</title>
-<style>
-  :root {
-    --max-width: 800px;
-    --accent: #3b82f6;
-    --bg: #0f172a;
-    --card-bg: #1e293b;
-    --text: #e2e8f0;
-    --muted: #94a3b8;
-    --border: #334155;
-    --code-bg: #1e293b40;
-    --shadow: rgba(0,0,0,0.3);
-  }
-  html[data-theme="light"] {
-    --accent: #2563eb;
-    --bg: #f8fafc;
-    --card-bg: #ffffff;
-    --text: #1e293b;
-    --muted: #64748b;
-    --border: #e2e8f0;
-    --code-bg: #eef2ff;
-    --shadow: rgba(0,0,0,0.04);
-  }
-  * {
-    box-sizing: border-box;
-  }
-  body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    line-height: 1.6;
-    padding: 1rem;
-    transition: background 0.2s ease, color 0.2s ease;
-  }
-  main {
-    max-width: var(--max-width);
-    margin: 0 auto;
-  }
-  .top-bar {
-    display: flex;
-    justify-content: flex-end;
-    max-width: var(--max-width);
-    margin: 0 auto 0.5rem;
-  }
-  #theme-toggle {
-    background: var(--card-bg);
-    color: var(--text);
-    border: 1px solid var(--border);
-    border-radius: 999px;
-    padding: 0.4rem 0.9rem;
-    font-size: 0.9rem;
-    cursor: pointer;
-  }
-  #theme-toggle:hover {
-    border-color: var(--accent);
-  }
-  h1 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-  }
-  h2 {
-    font-size: 1.2rem;
-    margin: 0;
-  }
-  hr {
-    border: none;
-    border-top: 1px solid var(--border);
-    margin: 1.5rem 0;
-  }
-  section.card {
-    background: var(--card-bg);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 1rem 1.25rem;
-    margin-bottom: 1rem;
-    box-shadow: 0 1px 2px var(--shadow);
-  }
-  section.break {
-    background: transparent;
-    border: none;
-    box-shadow: none;
-    text-align: center;
-    color: var(--muted);
-    font-style: italic;
-    padding: 0.5rem 0;
-  }
-  ol, ul {
-    padding-left: 1.25rem;
-  }
-  ol > li, ul > li {
-    margin-bottom: 0.4rem;
-  }
-  a {
-    color: var(--accent);
-    word-break: break-word;
-  }
-  code {
-    background: var(--code-bg);
-    padding: 0.1rem 0.35rem;
-    border-radius: 4px;
-    font-size: 0.9em;
-  }
-  img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 6px;
-    margin: 0.5rem 0;
-    display: block;
-  }
-  @media (max-width: 480px) {
-    body {
-      padding: 0.5rem;
-    }
-    h1 {
-      font-size: 1.5rem;
-    }
-    h2 {
-      font-size: 1.05rem;
-    }
-    section.card {
-      padding: 0.75rem 1rem;
-    }
-  }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<div class="top-bar">
-  <button id="theme-toggle" type="button" aria-label="Toggle dark/light mode">🌙 Dark</button>
-</div>
-<main>
-  <h1>Agenda</h1>
-  <p>View this agenda live on GitHub Pages: <a href="https://atlas-github.github.io/2026fstep31/" target="_blank" rel="noopener">https://atlas-github.github.io/2026fstep31/</a></p>
+  <header class="header">
+    <div class="container">
+      <h1>Van Gogh</h1>
+      <p>Web Developer & Creative Thinker</p>
+    </div>
+  </header>
 
-  <section class="card">
-    <h2>08.30 am: Intro, career paths in data and questions</h2>
-    <ol>
-      <li><a href="https://docs.google.com/presentation/d/e/2PACX-1vRbfvQpTP4ARbARRWhOL6WZ6koCKSHvf5OxFyHcJjn8GHXG3OpuneEH6uMYlpxKX0H_sEfHB6KAKrkq/pub?start=true&loop=false&slide=id.g29007063b8d_0_118" target="_blank" rel="noopener">This</a> is how my career is progressing so far</li>
-      <li><a href="https://docs.google.com/presentation/d/e/2PACX-1vQp61itveaNmpuS4UMXIfaQshjMYBqywRP2aMWZjMlZy5v-iNOUouDMn_-z33RBwi2TeauhgEzGoep-/pub?start=false&loop=false" target="_blank" rel="noopener">Here</a>'s some information about career paths in data</li>
-      <li>What <a href="https://padlet.com/kohwyhow/what-problems-do-you-want-to-solve-gjcypqiq99ko1wke" target="_blank" rel="noopener">problems</a> do you want to solve?</li>
-    </ol>
-  </section>
+  <nav class="navbar">
+    <div class="container">
+      <ul class="nav-links">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-  <section class="card">
-    <h2>09.00 am: Looker Studio</h2>
-    <ol>
-      <li><a href="https://mail.google.com/mail/" target="_blank" rel="noopener">Create</a> a Google account (you can use your personal one too, if you prefer)</li>
-      <li>Head to <a href="https://datastudio.google.com/" target="_blank" rel="noopener">Looker Studio</a>, using another tab</li>
-      <li>Download as <a href="https://docs.google.com/spreadsheets/d/1IaonaJj-c5Ud76Uc9WeRiMSlKLTNnbg-BCUxOoZrXn0/edit?usp=sharing" target="_blank" rel="noopener">CSV</a> from here and upload to Looker Studio</li>
-      <li>Build a few charts and filters
-        <ul>
-          <li>What are the total <code>sales</code> by <code>category</code> and <code>year</code>?</li>
-          <li>What are the total <code>profit</code> by <code>category</code> and <code>year</code>?</li>
-          <li>Which <code>cities</code> have generated the highest <code>sales</code>?</li>
-          <li>What are the <code>margins</code> by <code>segment</code>?</li>
-          <li>Make your dashboard look better using a <a href="https://coolors.co/" target="_blank" rel="noopener">color palette generator</a></li>
-        </ul>
-      </li>
-      <li>Practice by creating another page named <code>Customer</code>, and using any chart/table:
-        <ul>
-          <li>What is the name of the Customer with the Highest Sales in New York City?</li>
-          <li>What Sub-Category did this Customer buy, and how much Sales and Profit did this Customer generate for the company?</li>
-          <li>Open question: Is the business doing better or worse off from 2014 to 2017?</li>
-        </ul>
-      </li>
-    </ol>
-    <p><em>Source: Superstore sample data from <a href="https://community.tableau.com/s/question/0D54T00000CWeX8SAL/sample-superstore-sales-excelxls" target="_blank" rel="noopener">Tableau</a></em></p>
-  </section>
+  <main class="container">
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>
+        Welcome to my portfolio! I'm a passionate web developer with a love for creating
+        beautiful, functional websites. I enjoy learning new technologies and solving
+        complex problems through creative coding solutions. When I'm not coding, you can
+        find me exploring new design trends and contributing to open-source projects.
+      </p>
+    </section>
 
-  <section class="break">10.30 am: Break</section>
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>HTML</h3>
+          <p>Semantic markup and accessibility</p>
+        </div>
+        <div class="skill-card">
+          <h3>CSS</h3>
+          <p>Responsive design and animations</p>
+        </div>
+        <div class="skill-card">
+          <h3>JavaScript</h3>
+          <p>Interactivity and DOM manipulation</p>
+        </div>
+        <div class="skill-card">
+          <h3>Web Design</h3>
+          <p>UI/UX principles and best practices</p>
+        </div>
+        <div class="skill-card">
+          <h3>Git & GitHub</h3>
+          <p>Version control and collaboration</p>
+        </div>
+        <div class="skill-card">
+          <h3>Problem Solving</h3>
+          <p>Debugging and optimization</p>
+        </div>
+      </div>
+    </section>
 
-  <section class="card">
-    <h2>10.50 am: Google Colab and Seaborn</h2>
-    <ol>
-      <li>Using either your new Google account or your personal account, open <a href="https://colab.research.google.com/" target="_blank" rel="noopener">Google Colab</a> in another tab</li>
-      <li>Google Colab's interface and functions:
-        <ul>
-          <li>Tools &gt;&gt; Settings &gt;&gt;
-            <ul>
-              <li>Editor &gt;&gt; Show line numbers (check if you prefer)</li>
-              <li>Miscellaneous &gt;&gt; Corgi mode, Kitty mode (turn on if you like)</li>
-            </ul>
-          </li>
-          <li>Test with some basic code:
-            <ul>
-              <li>Click Connect at top right</li>
-              <li>Write simple definition</li>
-              <li>Test simple math problem</li>
-            </ul>
-          </li>
-          <li>Runtime settings
-            <ul>
-              <li>Run cells</li>
-              <li>Reset</li>
-            </ul>
-          </li>
-          <li>Code and text cells</li>
-          <li>Save</li>
-        </ul>
-      </li>
-      <li>More about Colab's Markdown here</li>
-      <li>Refer to <a href="https://github.com/atlas-github/2023fstep25/blob/main/colab_intro.ipynb" target="_blank" rel="noopener">colab_intro.ipynb</a></li>
-      <li>Open a new notebook on <a href="https://colab.research.google.com/" target="_blank" rel="noopener">Google Colab</a></li>
-      <li>Try out a few plots on Seaborn:
-        <ul>
-          <li><a href="https://seaborn.pydata.org/generated/seaborn.histplot.html#seaborn.histplot" target="_blank" rel="noopener">histplot</a></li>
-          <li><a href="https://seaborn.pydata.org/generated/seaborn.displot.html#seaborn.displot" target="_blank" rel="noopener">displot</a></li>
-          <li><a href="https://seaborn.pydata.org/generated/seaborn.boxplot.html#seaborn.boxplot" target="_blank" rel="noopener">boxplot</a></li>
-          <li><a href="https://seaborn.pydata.org/generated/seaborn.lmplot.html#seaborn.lmplot" target="_blank" rel="noopener">lmplot</a></li>
-        </ul>
-      </li>
-      <li>Practice:
-        <ul>
-          <li>Load the <a href="https://docs.google.com/spreadsheets/d/1IaonaJj-c5Ud76Uc9WeRiMSlKLTNnbg-BCUxOoZrXn0/edit?usp=sharing" target="_blank" rel="noopener">CSV</a> into Colab</li>
-          <li>Create a <a href="https://seaborn.pydata.org/generated/seaborn.displot.html#seaborn.displot" target="_blank" rel="noopener">displot</a>, where x-axis represents <code>Region</code></li>
-          <li>Create a <a href="https://seaborn.pydata.org/generated/seaborn.catplot.html#seaborn.catplot" target="_blank" rel="noopener">catplot</a>, where x-axis is <code>Profit</code> and y-axis is <code>Sub-Category</code></li>
-          <li>Adjust the size of charts by <code>sns.set(rc={'figure.figsize':(25.7,8.27)})</code></li>
-          <li>Create a <a href="https://seaborn.pydata.org/generated/seaborn.boxplot.html#seaborn.boxplot" target="_blank" rel="noopener">boxplot</a> where x-axis is <code>Sales</code>, and y-axis is <code>Region</code></li>
-        </ul>
-      </li>
-    </ol>
-  </section>
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>I'd love to hear from you! Feel free to reach out through any of these channels:</p>
+      <div class="contact-links">
+        <a href="mailto:hello@example.com" class="contact-button">Email Me</a>
+        <a href="https://github.com" class="contact-button" target="_blank">GitHub</a>
+        <a href="https://linkedin.com" class="contact-button" target="_blank">LinkedIn</a>
+      </div>
+    </section>
+  </main>
 
-  <section class="break">12:30 pm: Break</section>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Van Gogh</p>
+    </div>
+  </footer>
 
-  <section class="card">
-    <h2>1:30 pm: <a href="https://data.gov.my/dashboard" target="_blank" rel="noopener">data.gov.my</a></h2>
-    <ol>
-      <li>Using either your new Google account or your personal account, sign up for <a href="https://www.postman.com/" target="_blank" rel="noopener">Postman</a>, then log in
-        <ul>
-          <li>Look for Workspaces (top left of the page) &gt;&gt; My Workspace (Click)</li>
-          <li><img src="https://github.com/atlas-github/2023fstep25/assets/50855923/4144bc9c-1375-404e-9a39-747cd179724c" alt="Workspaces"></li>
-          <li>Look for the + sign beside Overview</li>
-          <li><img src="https://github.com/atlas-github/2023fstep25/assets/50855923/3582e9e2-61d3-4925-811d-959303ffca23" alt="Plus sign"></li>
-        </ul>
-      </li>
-      <li>Open <a href="https://data.gov.my/dashboard" target="_blank" rel="noopener">data.gov.my</a> using another tab on your browser &gt;&gt; API Docs</li>
-      <li>Scroll to Realtime APIs &gt;&gt; Weather API</li>
-      <li>Try the Forecast API Endpoint <code>GET https://api.data.gov.my/weather/forecast</code> on Postman
-        <ul>
-          <li>Look for the icon circled in the snapshot below</li>
-          <li><img src="https://github.com/atlas-github/2023fstep25/assets/50855923/f68b0004-a86f-467a-8c0c-d0a5c47c09a5" alt="Icon"></li>
-          <li>Switch from cURL to Python - Requests</li>
-          <li><img src="https://github.com/atlas-github/2023fstep25/assets/50855923/225b80ec-0323-42ad-8eb0-67c9d5ae0d85" alt="Python Requests"></li>
-          <li>Copy the Python code from Postman and paste into a new <a href="https://colab.research.google.com/" target="_blank" rel="noopener">Colab notebook</a></li>
-        </ul>
-      </li>
-      <li>Change <code>print(response.text)</code> to <code>response.json()</code> to see the data returned by the API endpoint</li>
-      <li>Tasks:
-        <ul>
-          <li>Convert json output into a dataframe using <code>pd.json_normalize()</code></li>
-          <li>Store dataframe into a variable <code>df</code></li>
-          <li>Filter to include only <code>df[df['location.location_name'] == 'Langkawi']</code></li>
-          <li>Output into a CSV file, then download and open in Excel</li>
-          <li>Now try the Transport API (GTFS-R) and output the locations of Prasarana buses on Google My Maps</li>
-          <li>What other questions can you answer?</li>
-          <li>Don't forget to try using the <a href="https://developer.data.gov.my/realtime-api/weather" target="_blank" rel="noopener">Weather API</a></li>
-        </ul>
-      </li>
-    </ol>
-  </section>
-
-  <section class="break">2:30 pm: Break</section>
-
-  <section class="card">
-    <h2>2.50 pm: Send emails of Air Pollution Index (API) data using Python</h2>
-    <ol>
-      <li>Need to <a href="https://mail.google.com/mail/" target="_blank" rel="noopener">create</a> another Google account, if you haven't already. Remember to activate <a href="https://support.google.com/accounts/answer/185839" target="_blank" rel="noopener">2-Step Verification</a></li>
-      <li>Refer to Sending a <a href="https://realpython.com/python-send-email/" target="_blank" rel="noopener">Plain-Text Email</a>. Look for the code section just above the <strong>Sending a Fancy Email</strong> header.</li>
-      <li>Register for an account on <a href="https://aqicn.org/api/" target="_blank" rel="noopener">aciqn</a></li>
-      <li>Using Postman, try making an API call (documentation <a href="https://aqicn.org/json-api/doc/#api-City_Feed-GetCityFeed" target="_blank" rel="noopener">here</a>)
-        <ul>
-          <li><code>GET https://api.waqi.info/feed/kuala%20lumpur/?token=###INSERT TOKEN HERE###</code></li>
-        </ul>
-      </li>
-      <li>From Postman, copy the Python code into a <a href="https://colab.research.google.com/" target="_blank" rel="noopener">Colab notebook</a></li>
-      <li>Tasks:
-        <ul>
-          <li>Get the API readings of a few stations</li>
-          <li>Send the email containing the API of a chosen station/a few selected locations</li>
-        </ul>
-      </li>
-    </ol>
-  </section>
-
-  <section class="card">
-    <h2>4.15 pm: Wrap up</h2>
-    <ol>
-      <li>Data visualization and coding skills help to automate routine tasks - worth picking up to save time
-        <ul>
-          <li>Looker Studio / Power BI</li>
-          <li><a href="https://learn.microsoft.com/en-us/certifications/exams/pl-300/" target="_blank" rel="noopener">Exam PL-300</a>: Microsoft Power BI Data Analyst</li>
-          <li><a href="https://nostarch.com/pythoncrashcourse2e" target="_blank" rel="noopener">Python Crash Course</a></li>
-        </ul>
-      </li>
-      <li>Get certified for cloud computing
-        <ul>
-          <li><a href="https://cloud.google.com/certification" target="_blank" rel="noopener">Google Cloud</a></li>
-          <li><a href="https://docs.microsoft.com/en-us/learn/certifications/" target="_blank" rel="noopener">Azure</a></li>
-          <li><a href="https://aws.amazon.com/certification/" target="_blank" rel="noopener">Amazon Web Services</a></li>
-        </ul>
-      </li>
-    </ol>
-  </section>
-
-  <section class="card">
-    <h2>[Bonus] Create a web app using GitHub Copilot and deploy on Netlify</h2>
-    <ol>
-      <li>Prerequisites
-        <ul>
-          <li>A <a href="https://github.com/signup" target="_blank" rel="noopener">GitHub</a> account</li>
-          <li><a href="https://github.com/features/copilot" target="_blank" rel="noopener">GitHub Copilot</a> enabled on your account (the free tier is enough for this exercise)</li>
-          <li>A <a href="https://app.netlify.com/signup" target="_blank" rel="noopener">Netlify</a> account (you can sign up using your GitHub account)</li>
-        </ul>
-      </li>
-      <li>Create a new repository for your web app
-        <ul>
-          <li>Go to <a href="https://github.com/new" target="_blank" rel="noopener">GitHub</a> and create a new <strong>public</strong> repository, e.g. <code>my-first-web-app</code></li>
-          <li>Check the box to add a <code>README.md</code> file</li>
-        </ul>
-      </li>
-      <li>Use GitHub Copilot (on <a href="https://github.com/copilot" target="_blank" rel="noopener">github.com/copilot</a>) to scaffold a simple template web app
-        <ul>
-          <li>Go to <a href="https://github.com/copilot" target="_blank" rel="noopener">github.com/copilot</a> and sign in with your GitHub account</li>
-          <li>Start a new chat, and point Copilot to your repository (type <code>#</code> in the chat box and pick your <code>my-first-web-app</code> repository, so it knows where to work)</li>
-          <li>Try a prompt like:
-            <ul>
-              <li>"In my repository my-first-web-app, create a simple, single-page personal portfolio website using only HTML, CSS and JavaScript. Include a header with my name, an About Me section, a list of skills, and a contact section. Put everything in an index.html file with inline or linked style.css and script.js files. Open a pull request with these changes."</li>
-            </ul>
-          </li>
-          <li>Copilot will work in the background as a coding agent and open a pull request on your repository with the new files</li>
-          <li>Review the pull request: click on the <strong>Files changed</strong> tab to see what Copilot created, then click <strong>Merge pull request</strong> once you're happy with it</li>
-          <li>Practice iterating with Copilot by starting new chats (or replying in the pull request) with prompts such as:
-            <ul>
-              <li>"Change the color scheme to a dark theme"</li>
-              <li>"Add a button that shows a random motivational quote when clicked"</li>
-              <li>"Make the page mobile-responsive"</li>
-            </ul>
-          </li>
-          <li>Merge each pull request that Copilot opens once you've reviewed the changes</li>
-        </ul>
-      </li>
-      <li>Preview your web app
-        <ul>
-          <li>After merging, go to your repository's code view on github.com and open <code>index.html</code></li>
-          <li>Click the <strong>Raw</strong> button, then copy the URL and change <code>raw.githubusercontent.com</code> to <code>htmlpreview.github.io/?https://raw.githubusercontent.com</code> to get a quick preview in your browser, or simply wait until you deploy on Netlify in the next step to see it live</li>
-        </ul>
-      </li>
-      <li>Deploy the web app on Netlify
-        <ul>
-          <li>Log in to <a href="https://app.netlify.com/" target="_blank" rel="noopener">Netlify</a></li>
-          <li>Click <strong>Add new site</strong> &gt;&gt; <strong>Import an existing project</strong></li>
-          <li>Choose <strong>Deploy with GitHub</strong>, authorize Netlify if prompted, and select your <code>my-first-web-app</code> repository</li>
-          <li>Since this is a static HTML/CSS/JS site, leave the build command empty and set the publish directory to <code>/</code> (or the folder containing your <code>index.html</code>)</li>
-          <li>Click <strong>Deploy site</strong></li>
-          <li>Wait for the deployment to finish, then click the generated URL (e.g. <code>https://random-name-12345.netlify.app</code>) to view your live web app</li>
-        </ul>
-      </li>
-      <li>Practice:
-        <ul>
-          <li>Use <a href="https://github.com/copilot" target="_blank" rel="noopener">github.com/copilot</a> to ask for a new section or feature to be added to your web app (e.g. a project gallery, a simple contact form, or an image carousel), and merge the resulting pull request</li>
-          <li>Confirm that Netlify automatically redeploys your site after each merge (this is called <strong>continuous deployment</strong>)</li>
-          <li>Go to <strong>Site settings</strong> &gt;&gt; <strong>Change site name</strong> on Netlify to give your site a more memorable URL</li>
-          <li>Open question: What other small projects could you build and deploy this way to showcase your skills?</li>
-        </ul>
-      </li>
-    </ol>
-  </section>
-</main>
-<script>
-  (function () {
-    var root = document.documentElement;
-    var toggleBtn = document.getElementById('theme-toggle');
-    var stored = localStorage.getItem('theme');
-    var theme = stored === 'light' || stored === 'dark' ? stored : 'dark';
-
-    function applyTheme(t) {
-      root.setAttribute('data-theme', t);
-      toggleBtn.textContent = t === 'dark' ? '🌙 Dark' : '☀️ Light';
-    }
-
-    applyTheme(theme);
-
-    toggleBtn.addEventListener('click', function () {
-      theme = theme === 'dark' ? 'light' : 'dark';
-      localStorage.setItem('theme', theme);
-      applyTheme(theme);
-    });
-  })();
-</script>
+  <script src="script.js"></script>
 </body>
 </html>
