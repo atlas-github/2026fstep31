@@ -54,6 +54,11 @@ a:hover, a:focus {
 
 pre, code {
   background-color: var(--color-code-bg);
+  color: var(--color-text);
+}
+
+strong, b, dt, th {
+  color: var(--color-heading);
 }
 
 hr {
