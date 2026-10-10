@@ -154,4 +154,12 @@ ___
        - Confirm that Netlify automatically redeploys your site after each merge (this is called **continuous deployment**)
        - Go to **Site settings** >> **Change site name** on Netlify to give your site a more memorable URL
        - Open question: What other small projects could you build and deploy this way to showcase your skills?
+   7. Practice with more projects: once you're comfortable with the workflow above, try building and deploying one or more of these as additional practice (repeat steps 2-6 for each new idea)
+       - **Digital business card / "link-in-bio" page** - a minimal single-page site with contact links, social icons, and a downloadable PDF resume - a natural, easier follow-on to the CV portfolio
+       - **Personal blog or "learning log"** - a simple static blog where each class topic (SQL, Power BI, Python, cloud certs) becomes a blog post, reinforcing the day's curriculum while giving them a reason to keep committing
+       - **Simple budgeting or expense tracker** - ties into the data/analytics theme of the course (manipulating and displaying data with JS, maybe a chart library), bridging the data analysis and web dev portions of the day
+       - **Retirement calculator** - a page where users enter their current age, planned retirement age, current savings, monthly contribution, and expected annual return rate, and the app calculates and displays projected retirement savings (ideally with a simple chart of growth over time)
+       - **"My certifications" dashboard** - a page that tracks progress toward the PL-300, Google Cloud, Azure, or AWS certifications mentioned earlier in the README, with checklists and links - connects directly to the "Wrap up" section
+       - **Small business landing page template** - a one-page site for a local shop/café/tutor (hero section, menu/services, hours, map embed, contact form) - this is one of the most commonly requested freelance gigs for beginners
+       - **Event landing page / RSVP page** - for weddings, birthdays, or community events, with a countdown timer and RSVP form (using a free form backend like Netlify Forms)
 
